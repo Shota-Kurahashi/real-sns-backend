@@ -30,4 +30,4 @@ app.use("/api/upload", uploadRoute);
 app.get("/", (req, res) => {
   res.send("hello");
 });
-app.listen(8000, () => console.log("start"));
+app.listen(process.env.PORT || 8000, () => console.log("start"));
